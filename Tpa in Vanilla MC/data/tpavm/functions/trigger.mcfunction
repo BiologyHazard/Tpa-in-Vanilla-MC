@@ -1,0 +1,12 @@
+execute as @a[scores={tpa=1..}] run function tpavm:tpa/tpa
+execute as @a[scores={tpa=..-1}] run function tpavm:tpa/tpa
+execute as @a[scores={tpahere=1..}] run function tpavm:tpa/tpahere
+execute as @a[scores={tpahere=..-1}] run function tpavm:tpa/tpahere
+execute as @a[scores={tpacancel=1..}] run function tpavm:tpa/tpacancel
+execute as @a[scores={tpacancel=..-1}] run function tpavm:tpa/tpacancel
+execute as @a[scores={tpaccept=1..}] run function tpavm:tpa/tpaccept
+execute as @a[scores={tpaccept=..-1}] run function tpavm:tpa/tpaccept
+execute as @a[scores={tpdeny=1..}] run function tpavm:tpa/tpdeny
+execute as @a[scores={tpdeny=..-1}] run function tpavm:tpa/tpdeny
+execute as @a[scores={getnumid=1..}] run function tpavm:numid/getnumid
+execute as @a[scores={getnumid=..-1}] run function tpavm:numid/getnumid
