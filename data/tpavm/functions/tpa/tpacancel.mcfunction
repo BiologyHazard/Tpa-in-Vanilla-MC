@@ -3,8 +3,8 @@ scoreboard players set @s tpacancel 0
 
 # 加tag
 tag @s add tpavm_myself
-execute as @a if score @s tpavm_numid = @a[tag=tpavm_myself,limit=1] tpavm_tpa_req run tag @s add tpavm_tpa_to
-execute as @a if score @s tpavm_numid = @a[tag=tpavm_myself,limit=1] tpavm_tpah_req run tag @s add tpavm_tpah_from
+execute as @a if score @s tpavm_numid = @a[tag=tpavm_myself, limit=1] tpavm_tpa_req run tag @s add tpavm_tpa_to
+execute as @a if score @s tpavm_numid = @a[tag=tpavm_myself, limit=1] tpavm_tpah_req run tag @s add tpavm_tpah_from
 tag @s remove tpavm_myself
 
 # 提示信息

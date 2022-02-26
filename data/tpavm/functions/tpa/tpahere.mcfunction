@@ -3,7 +3,7 @@ scoreboard players operation @s tpavm_tpah_req = @s tpahere
 scoreboard players set @s tpahere 0
 
 tag @s add tpavm_myself
-execute as @a if score @s tpavm_numid = @a[tag=tpavm_myself,limit=1] tpavm_tpah_req run tag @s add tpavm_tpah_from
+execute as @a if score @s tpavm_numid = @a[tag=tpavm_myself, limit=1] tpavm_tpah_req run tag @s add tpavm_tpah_from
 tag @s remove tpavm_myself
 
 # 提示信息

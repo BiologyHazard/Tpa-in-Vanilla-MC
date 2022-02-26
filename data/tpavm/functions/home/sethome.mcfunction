@@ -1,6 +1,6 @@
 # 删除原有的marker
 tag @s add tpavm_myself
-execute as @e[tag=tpavm_home_marker] if score @s tpavm_home_owner = @a[tag=tpavm_myself,limit=1] tpavm_numid if score @s tpavm_home_idx = @a[tag=tpavm_myself,limit=1] sethome run kill @s
+execute as @e[tag=tpavm_home_marker] if score @s tpavm_home_owner = @a[tag=tpavm_myself, limit=1] tpavm_numid if score @s tpavm_home_idx = @a[tag=tpavm_myself, limit=1] sethome run kill @s
 tag @s remove tpavm_myself
 
 # 添加marker

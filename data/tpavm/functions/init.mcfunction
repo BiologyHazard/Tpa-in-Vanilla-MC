@@ -17,7 +17,7 @@ scoreboard objectives add tpavm_tpah_req dummy [{"text":"传送至请求","color
 scoreboard objectives add tpavm_home_owner dummy [{"text":"家的所有者","color":"aqua"}]
 scoreboard objectives add tpavm_home_idx dummy [{"text":"家的编号","color":"aqua"}]
 
-scoreboard players set #max_home_count tpavm_parameters 5
+execute unless score #max_home_count tpavm_parameters matches -2147483648..2147483647 run scoreboard players set #max_home_count tpavm_parameters 5
 
 # scoreboard players enable @a getnumid
 # scoreboard players enable @a tpa

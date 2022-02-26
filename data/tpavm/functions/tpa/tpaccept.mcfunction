@@ -3,13 +3,13 @@ scoreboard players set @s tpaccept 0
 
 # 标记被传送者
 tag @s add tpavm_myself
-execute as @a if score @s tpavm_tpa_req = @a[tag=tpavm_myself,limit=1] tpavm_numid run tag @s add tpavm_tpa_from
-execute as @a if score @s tpavm_tpah_req = @a[tag=tpavm_myself,limit=1] tpavm_numid run tag @s add tpavm_tpah_to
+execute as @a if score @s tpavm_tpa_req = @a[tag=tpavm_myself, limit=1] tpavm_numid run tag @s add tpavm_tpa_from
+execute as @a if score @s tpavm_tpah_req = @a[tag=tpavm_myself, limit=1] tpavm_numid run tag @s add tpavm_tpah_to
 tag @s remove tpavm_myself
 
 # 传送
 teleport @a[tag=tpavm_tpa_from] @s
-teleport @s @a[tag=tpavm_tpah_to,sort=arbitrary,limit=1]
+teleport @s @a[tag=tpavm_tpah_to, sort=arbitrary, limit=1]
 
 # 提示信息
 execute if entity @a[tag=tpavm_tpa_from] run tellraw @s ["",{"selector":"@a[tag=tpavm_tpa_from]","color":"yellow"},{"text":" 已传送至你","color":"gold"}]

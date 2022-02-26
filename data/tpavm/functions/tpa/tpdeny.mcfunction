@@ -3,8 +3,8 @@ scoreboard players set @s tpdeny 0
 
 # 标记被传送者
 tag @s add tpavm_myself
-execute as @a if score @s tpavm_tpa_req = @a[tag=tpavm_myself,limit=1] tpavm_numid run tag @s add tpavm_tpa_from
-execute as @a if score @s tpavm_tpah_req = @a[tag=tpavm_myself,limit=1] tpavm_numid run tag @s add tpavm_tpah_to
+execute as @a if score @s tpavm_tpa_req = @a[tag=tpavm_myself, limit=1] tpavm_numid run tag @s add tpavm_tpa_from
+execute as @a if score @s tpavm_tpah_req = @a[tag=tpavm_myself, limit=1] tpavm_numid run tag @s add tpavm_tpah_to
 tag @s remove tpavm_myself
 
 # 提示信息

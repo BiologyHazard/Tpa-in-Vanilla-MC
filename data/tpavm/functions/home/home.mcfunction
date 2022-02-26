@@ -1,6 +1,6 @@
 # 传送
 tag @s add tpavm_myself
-execute as @e[tag=tpavm_home_marker] if score @s tpavm_home_owner = @a[tag=tpavm_myself,limit=1] tpavm_numid if score @s tpavm_home_idx = @a[tag=tpavm_myself,limit=1] home run teleport @a[tag=tpavm_myself] @s
+execute as @e[tag=tpavm_home_marker] if score @s tpavm_home_owner = @a[tag=tpavm_myself, limit=1] tpavm_numid if score @s tpavm_home_idx = @a[tag=tpavm_myself, limit=1] home run teleport @a[tag=tpavm_myself] @s
 tag @s remove tpavm_myself
 
 # 提示信息
