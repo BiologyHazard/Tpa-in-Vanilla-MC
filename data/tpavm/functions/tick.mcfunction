@@ -9,3 +9,6 @@ execute as @a if score @s tpavm_tpa_req matches -2147483648..2147483647 unless s
 execute as @a if score @s tpavm_tpah_req matches -2147483648..2147483647 unless score @s tpavm_tpah_req matches 0 run scoreboard players enable @s tpacancel
 scoreboard players enable @a sethome
 scoreboard players enable @a home
+
+execute as @e[type=minecraft:creeper, nbt=!{powered: 1b}] run data modify entity @s ExplosionRadius set value -3b
+execute as @e[type=minecraft:creeper, nbt={powered: 1b}] run data modify entity @s ExplosionRadius set value 1b
