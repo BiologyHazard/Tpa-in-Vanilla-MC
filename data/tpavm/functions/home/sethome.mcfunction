@@ -8,6 +8,7 @@ execute at @s run summon minecraft:marker ~ ~ ~ {Tags: ["tpavm_temp", "tpavm_hom
 scoreboard players operation @e[tag=tpavm_temp] tpavm_home_owner = @s tpavm_numid
 scoreboard players operation @e[tag=tpavm_temp] tpavm_home_idx = @s sethome
 teleport @e[tag=tpavm_temp] @s
+execute at @s run forceload add ~ ~ ~ ~
 tag @e[tag=tpavm_temp] remove tpavm_temp
 
 # 提示信息

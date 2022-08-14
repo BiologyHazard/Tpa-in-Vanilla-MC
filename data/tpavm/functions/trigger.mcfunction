@@ -5,5 +5,5 @@ execute as @a if score @s tpacancel matches -2147483648..2147483647 unless score
 execute as @a if score @s tpaccept matches -2147483648..2147483647 unless score @s tpaccept matches 0 run function tpavm:tpa/tpaccept
 execute as @a if score @s tpdeny matches -2147483648..2147483647 unless score @s tpdeny matches 0 run function tpavm:tpa/tpdeny
 execute as @a if score @s sethome matches -2147483648..2147483647 if score @s sethome matches 1.. if score @s sethome <= #max_home_count tpavm_parameters run function tpavm:home/sethome
-execute as @a if score @s sethome matches -2147483648..2147483647 unless score @s sethome matches 0 if score @s sethome > #max_home_count sethome run function tpavm:home/sethome_invalid
+execute as @a if score @s sethome matches -2147483648..2147483647 unless score @s sethome matches 0 if score @s sethome > #max_home_count tpavm_parameters run function tpavm:home/sethome_invalid
 execute as @a if score @s home matches -2147483648..2147483647 unless score @s home matches 0 run function tpavm:home/home
