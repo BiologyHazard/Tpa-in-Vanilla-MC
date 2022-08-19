@@ -22,4 +22,4 @@ tag @a remove tpavm_tpah_from
 tag @a remove tpavm_tpah_to
 tag @a remove tpavm_temp
 
-kill @e[tag=tpavm_home_marker]
+execute as @e[tag=tpavm_home_marker] at @s run function tpavm:home/delhome

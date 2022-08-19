@@ -1,6 +1,6 @@
-# 删除原有的marker
+# 删除原有的marker并卸载区块
 tag @s add tpavm_myself
-execute as @e[tag=tpavm_home_marker] if score @s tpavm_home_owner = @a[tag=tpavm_myself, limit=1] tpavm_numid if score @s tpavm_home_idx = @a[tag=tpavm_myself, limit=1] sethome run kill @s
+execute as @e[tag=tpavm_home_marker] if score @s tpavm_home_owner = @a[tag=tpavm_myself, limit=1] tpavm_numid if score @s tpavm_home_idx = @a[tag=tpavm_myself, limit=1] sethome at @s run function tpavm:home/delhome
 tag @s remove tpavm_myself
 
 # 添加marker
